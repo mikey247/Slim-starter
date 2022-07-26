@@ -1,0 +1,10 @@
+{% extends "layout/app.twig" %}
+
+
+{% block content %}
+
+{% for user in users %}
+    <h5>{{user.fullName()}} </h5>
+{% endfor %}
+
+{% endblock %}

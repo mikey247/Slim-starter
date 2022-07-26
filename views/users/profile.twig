@@ -1,0 +1,19 @@
+{% extends "layout/app.twig" %}
+
+{% block content %}
+
+{% if not user %}
+    <h1>No user</h1>
+{% else %}
+    
+<h1>{{user.username}}</h1>
+
+<ul>
+      <li>{{user.email}}</li>
+      <li>{{user.firstName}} {{user.lastName}}</li>
+</ul>
+{% endif %}
+
+
+
+{% endblock %}

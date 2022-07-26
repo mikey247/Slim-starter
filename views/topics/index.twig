@@ -1,0 +1,9 @@
+{% extends "layout/app.twig" %}
+
+{% block content %}
+
+{% for topic in topics %}
+    <p> <a href="{{path_for('topics.show', {id:topic.id}) }}" >{{topic.title}} </a> </p>
+{% endfor %}
+
+{% endblock %}
